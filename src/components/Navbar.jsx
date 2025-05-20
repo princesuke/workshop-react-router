@@ -10,7 +10,7 @@ export default function Navbar() {
 
     return <nav className="mb-10">
         <ul className='flex justify-center gap-2 font-light'>
-          <li className={styles.liLink}><NavLink to="/">HOME</NavLink> / </li>
+          <li className={styles.liLink}><NavLink to={`/${lang}`} end>HOME</NavLink> / </li>
           <li className={styles.liLink}><NavLink to={`/${lang}/lifestyle`}>LIFESTYLE</NavLink> / </li>
           <li className={styles.liLink}><NavLink to={`/${lang}/journey`}>JOURNEY</NavLink> / </li>
           <li className={styles.liLink}><NavLink to={`/${lang}/inspiration`}>INSPRIRATION</NavLink> / </li>
