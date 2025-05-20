@@ -1,14 +1,18 @@
 import { NavLink } from "react-router" 
 
 export default function Navbar() {
-    return <nav>
+    const styles = {
+      liLink: "hover:font-medium hover:text-[#826047] active:font-[200]"
+    }
+
+    return <nav className="mb-10">
         <ul className='flex justify-center gap-2 font-light'>
-          <li><NavLink to="#">HOME</NavLink> / </li>
-          <li><NavLink>LIFESTYLE</NavLink> / </li>
-          <li><NavLink>JOURNEY</NavLink> / </li>
-          <li><NavLink>INSPRIRATION</NavLink> / </li>
-          <li><NavLink>ABOUT</NavLink> </li>
-          <li><NavLink>CONTACT</NavLink></li>
+          <li className={styles.liLink}><NavLink to="/">HOME</NavLink> / </li>
+          <li className={styles.liLink}><NavLink to="/lifestyle">LIFESTYLE</NavLink> / </li>
+          <li className={styles.liLink}><NavLink to="/journey">JOURNEY</NavLink> / </li>
+          <li className={styles.liLink}><NavLink to="/inspiration">INSPRIRATION</NavLink> / </li>
+          <li className={styles.liLink}><NavLink to="/about">ABOUT / </NavLink> </li>
+          <li className={styles.liLink}><NavLink to="/contact">CONTACT</NavLink></li>
         </ul>
       </nav>
 }
