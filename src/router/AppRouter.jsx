@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
 import Lifestyle from "../pages/LifeStyle";
@@ -15,7 +15,8 @@ export default function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<Navigate to="/en" replace />} />
+                <Route path=":lang/*" element={<Layout />}>
                     <Route index element={<Home />} />
                     <Route path="lifestyle" element={<Lifestyle />} />
                     <Route path="journey" element={<Jouney />} />
