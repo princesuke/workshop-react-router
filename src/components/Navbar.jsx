@@ -12,7 +12,8 @@ export default function Navbar() {
           <li className={styles.liLink}><NavLink to="/journey">JOURNEY</NavLink> / </li>
           <li className={styles.liLink}><NavLink to="/inspiration">INSPRIRATION</NavLink> / </li>
           <li className={styles.liLink}><NavLink to="/about">ABOUT / </NavLink> </li>
-          <li className={styles.liLink}><NavLink to="/contact">CONTACT</NavLink></li>
+          <li className={styles.liLink}><NavLink to="/contact">CONTACT / </NavLink></li>
+          <li className={styles.liLink}><NavLink to="/shop">SHOP</NavLink></li>
         </ul>
       </nav>
 }
